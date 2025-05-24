@@ -18,38 +18,38 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between items-center py-6">
 						<div className="flex items-center">
-							<h1 className="text-2xl font-bold text-slate-800">Secfi</h1>
+							<h1 className="text-2xl font-bold text-slate-800">Giordano Administração</h1>
 						</div>
 						<nav className="hidden md:flex space-x-8">
 							<div className="relative group">
 								<button className="text-slate-600 hover:text-slate-800 px-3 py-2 text-sm font-medium">
-									For Employees
+									Para Condôminos
 								</button>
 							</div>
 							<div className="relative group">
 								<button className="text-slate-600 hover:text-slate-800 px-3 py-2 text-sm font-medium">
-									For Executives
+									Para Síndicos
 								</button>
 							</div>
 							<div className="relative group">
 								<button className="text-slate-600 hover:text-slate-800 px-3 py-2 text-sm font-medium">
-									For Investors
+									Para Construtoras
 								</button>
 							</div>
 							<div className="relative group">
 								<button className="text-slate-600 hover:text-slate-800 px-3 py-2 text-sm font-medium">
-									Tools
+									Serviços
 								</button>
 							</div>
 							<div className="relative group">
 								<button className="text-slate-600 hover:text-slate-800 px-3 py-2 text-sm font-medium">
-									Resources
+									Recursos
 								</button>
 							</div>
 						</nav>
 						<div className="flex items-center space-x-4">
 							<Link href="#" className="text-slate-600 hover:text-slate-800 text-sm font-medium">
-								Log in
+								Portal do Condômino
 							</Link>
 						
 						</div>
@@ -57,31 +57,15 @@ export default function Home() {
 				</div>
 			</header>
 
-			{/* Floating Modal Button */}
-			<Dialog>
-				<DialogTrigger asChild>
-					<div className="fixed bottom-8 right-8 z-20">
-						<button
-							className="bg-slate-700 hover:bg-slate-800 text-white font-bold py-3 px-5 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-slate-700 focus:ring-opacity-50"
-						>
-							Solicite seu Orçamento
-						</button>
-					</div>
-				</DialogTrigger>
-				<DialogContent className="p-0 sm:max-w-[800px]" removeCloseButton>
-					<GoogleFormEmbed formSrc={googleFormUrl} />
-				</DialogContent>
-			</Dialog>
-
 			{/* Hero Section */}
 			<section className="bg-stone-50 py-20">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 					<h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-8">
-						Things are just different when{" "}
-						<span className="italic">you have equity</span>
+						A gestão do seu condomínio{" "}
+						<span className="italic">nunca foi tão eficiente</span>
 					</h1>
 					<p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-						Secfi delivers liquidity and wealth management services to help employees and shareholders of innovative companies achieve their financial goals.
+						A Giordano oferece soluções completas em administração predial e gestão condominial para garantir tranquilidade, transparência e valorização do seu patrimônio.
 					</p>
 				</div>
 			</section>
@@ -91,24 +75,25 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="text-center mb-16">
 						<h2 className="text-4xl font-bold text-slate-800 mb-4">
-							You need solutions built for <span className="italic">your</span> unique needs
+							Soluções pensadas para <span className="italic">suas</span> necessidades específicas
 						</h2>
 					</div>
 					
-					{/* Secfi Liquidity Section */}
+					{/* Administração Predial Section */}
 					<div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
 						<div className="bg-gradient-to-br from-stone-100 to-stone-200 p-8 rounded-2xl h-[700px] flex flex-col justify-center">
-							<h3 className="text-2xl font-bold text-slate-800 mb-2">Secfi Liquidity</h3>
-							<p className="text-lg text-slate-600 mb-6">Liquidity for your pre-IPO shares and options</p>
+							<h3 className="text-2xl font-bold text-slate-800 mb-2">Administração Predial</h3>
+							<p className="text-lg text-slate-600 mb-6">Gestão completa e profissional do seu condomínio</p>
 							<p className="text-slate-700 mb-6">
-								Ready to turn your equity into cash? Our flexible liquidity products help you unlock the value of your pre-IPO shares while looking to optimizing for taxes and long-term gains, so you get to keep more of your hard-earned money.
+								Nossa equipe especializada cuida de todos os aspectos administrativos do seu condomínio. Desde a gestão financeira até a manutenção predial, oferecemos um serviço completo que garante eficiência, transparência e valorização do seu patrimônio.
 							</p>
 							<Link href="#" className="text-slate-700 font-medium hover:text-slate-800">
-								Learn more →
+								Saiba mais →
 							</Link>
 							<div className="mt-6 space-y-2">
-								<div className="text-sm text-slate-600">• Secondary Sale</div>
-								<div className="text-sm text-slate-600">• Non-recourse Financing</div>
+								<div className="text-sm text-slate-600">• Gestão Financeira e Contábil</div>
+								<div className="text-sm text-slate-600">• Administração de Pessoal</div>
+								<div className="text-sm text-slate-600">• Manutenção Preventiva e Corretiva</div>
 							</div>
 						</div>
 						
@@ -116,7 +101,7 @@ export default function Home() {
 							<div className="bg-white rounded-2xl shadow-lg border border-stone-200 h-[700px] w-full flex items-center justify-center overflow-hidden">
 								<Image
 									src="assets/gifs/landing-page-image-1.gif"
-									alt="Secfi Liquidity Animation"
+									alt="Administração Predial"
 									width={1}
 									height={1}
 									className="rounded-xl object-cover w-full h-full"
@@ -126,13 +111,13 @@ export default function Home() {
 						</div>
 					</div>
 
-					{/* Secfi Wealth Section */}
+					{/* Consultoria Especializada Section */}
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<div className="flex justify-center lg:order-1">
 							<div className="bg-white rounded-2xl shadow-lg border border-stone-200 h-[700px] w-full flex items-center justify-center overflow-hidden">
 								<Image
 									src="assets/gifs/landing-page-image-2.gif"
-									alt="Secfi Wealth Animation"
+									alt="Consultoria Especializada"
 									width={1}
 									height={1}
 									className="rounded-xl object-cover w-full h-full"
@@ -142,20 +127,20 @@ export default function Home() {
 						</div>
 						
 						<div className="bg-gradient-to-br from-stone-100 to-stone-200 p-8 rounded-2xl lg:order-2 h-[700px] flex flex-col justify-center">
-							<h3 className="text-2xl font-bold text-slate-800 mb-2">Secfi Wealth</h3>
-							<p className="text-lg text-slate-600 mb-6">Financial planning and investment management</p>
+							<h3 className="text-2xl font-bold text-slate-800 mb-2">Consultoria Especializada</h3>
+							<p className="text-lg text-slate-600 mb-6">Assessoria jurídica e técnica especializada</p>
 							<p className="text-slate-700 mb-6">
-								Get personalized financial planning and guidance from experienced advisors. Whether you work at a private startup or a public company, our tailored strategies can help you grow and protect your wealth with confidence.
+								Conte com nossa equipe de especialistas para orientação em questões jurídicas, técnicas e administrativas. Oferecemos suporte completo para tomada de decisões estratégicas que garantem o melhor para seu condomínio.
 							</p>
 							<Link href="#" className="text-slate-700 font-medium hover:text-slate-800">
-								Learn more →
+								Saiba mais →
 							</Link>
 							<div className="mt-6">
-								<p className="text-sm font-medium text-slate-800 mb-2">Your financial peace of mind is our priority</p>
+								<p className="text-sm font-medium text-slate-800 mb-2">Sua tranquilidade é nossa prioridade</p>
 								<div className="space-y-1 text-sm text-slate-600">
-									<div>• A financial plan aligned with your needs and values</div>
-									<div>• A flexible, iterative approach</div>
-									<div>• A portfolio built just for you</div>
+									<div>• Assessoria jurídica especializada em direito condominial</div>
+									<div>• Consultoria técnica em engenharia e arquitetura</div>
+									<div>• Suporte na elaboração de regulamentos internos</div>
 								</div>
 							</div>
 						</div>
@@ -167,24 +152,24 @@ export default function Home() {
 			<section className="bg-stone-100 py-20">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 					<h2 className="text-4xl font-bold text-slate-800 mb-4">
-						Leave the calculations to us
+						Tecnologia a serviço da gestão
 					</h2>
 					<p className="text-xl text-slate-600 mb-12">
-						Equity and tax planning can be overwhelming. Our tools do the heavy lifting so you can focus on what matters.
+						Utilizamos as mais modernas ferramentas tecnológicas para otimizar a gestão do seu condomínio e facilitar o dia a dia dos condôminos.
 					</p>
 					
 					<div className="grid md:grid-cols-3 gap-8">
 						<div className="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
-							<h3 className="font-semibold text-slate-800 mb-2">AMT Calculator</h3>
-							<p className="text-slate-600 text-sm">Exercise incentive stock options without paying the alternative minimum tax.</p>
+							<h3 className="font-semibold text-slate-800 mb-2">Portal do Condômino</h3>
+							<p className="text-slate-600 text-sm">Acesse boletos, extratos, comunicados e documentos importantes de forma rápida e segura.</p>
 						</div>
 						<div className="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
-							<h3 className="font-semibold text-slate-800 mb-2">Equity Planner</h3>
-							<p className="text-slate-600 text-sm">Exercise now or at IPO? Sell on the secondary market or hold? Understand your options in less than 5 minutes.</p>
+							<h3 className="font-semibold text-slate-800 mb-2">Gestão de Ocorrências</h3>
+							<p className="text-slate-600 text-sm">Sistema integrado para abertura, acompanhamento e resolução de solicitações de manutenção.</p>
 						</div>
 						<div className="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
-							<h3 className="font-semibold text-slate-800 mb-2">Stock Options Tax Calculator</h3>
-							<p className="text-slate-600 text-sm">Calculate the costs to exercise your stock options - including taxes.</p>
+							<h3 className="font-semibold text-slate-800 mb-2">Relatórios Financeiros</h3>
+							<p className="text-slate-600 text-sm">Acompanhe a situação financeira do condomínio com relatórios detalhados e transparentes.</p>
 						</div>
 					</div>
 				</div>
@@ -195,33 +180,32 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="text-center mb-16">
 						<h2 className="text-4xl font-bold text-slate-800 mb-8">
-							Choose a partner that <span className="italic">gets you</span>
+							Escolha quem <span className="italic">entende</span> do seu condomínio
 						</h2>
 					</div>
 					
 					<div className="grid md:grid-cols-3 gap-12">
 						<div className="text-center">
-							<h3 className="text-xl font-bold text-slate-800 mb-4">We've been in your shoes before</h3>
+							<h3 className="text-xl font-bold text-slate-800 mb-4">Experiência comprovada</h3>
 							<p className="text-slate-600">
-								Secfi was built with tech professionals in mind. Whether navigating stock options or maximizing equity, we help guide you through every step of your financial journey.
+								Com anos de experiência no mercado, a Giordano é especialista em administração predial e conhece os desafios únicos de cada tipo de condomínio.
 							</p>
 						</div>
 						<div className="text-center">
-							<h3 className="text-xl font-bold text-slate-800 mb-4">We meet you where you're at</h3>
+							<h3 className="text-xl font-bold text-slate-800 mb-4">Atendimento personalizado</h3>
 							<p className="text-slate-600">
-								Whether you're at a private startup or a public company, we provide personalized strategies that fit your unique needs.
+								Cada condomínio é único, por isso oferecemos soluções personalizadas que atendem às necessidades específicas do seu empreendimento.
 							</p>
 						</div>
 						<div className="text-center">
-							<h3 className="text-xl font-bold text-slate-800 mb-4">Big opportunities, no big minimums</h3>
+							<h3 className="text-xl font-bold text-slate-800 mb-4">Transparência total</h3>
 							<p className="text-slate-600">
-								We believe you don't need millions to benefit from smart financial planning. We strive to take a holistic approach to your finances, considering stock options and other assets to help you save time, cut costs, and grow your wealth.
+								Acreditamos que a transparência é fundamental. Por isso, disponibilizamos todas as informações financeiras e administrativas de forma clara e acessível.
 							</p>
 						</div>
 					</div>
 				</div>
 			</section>
-
 
 			{/* Newsletter Section */}
 			<section className="bg-gradient-to-r from-slate-700 to-slate-800 py-20">
@@ -271,44 +255,44 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="grid md:grid-cols-4 gap-8">
 						<div>
-							<h3 className="text-lg font-semibold mb-4">For Employees</h3>
+							<h3 className="text-lg font-semibold mb-4">Para Condôminos</h3>
 							<ul className="space-y-2 text-stone-300">
-								<li><Link href="#" className="hover:text-white">Liquidity Solutions</Link></li>
-								<li><Link href="#" className="hover:text-white">Secondary Sale</Link></li>
-								<li><Link href="#" className="hover:text-white">Non-Recourse Financing</Link></li>
-								<li><Link href="#" className="hover:text-white">Financial Advice</Link></li>
+								<li><Link href="#" className="hover:text-white">Portal do Condômino</Link></li>
+								<li><Link href="#" className="hover:text-white">Segunda Via de Boletos</Link></li>
+								<li><Link href="#" className="hover:text-white">Solicitação de Serviços</Link></li>
+								<li><Link href="#" className="hover:text-white">Comunicados</Link></li>
 							</ul>
 						</div>
 						<div>
-							<h3 className="text-lg font-semibold mb-4">For Executives</h3>
+							<h3 className="text-lg font-semibold mb-4">Para Síndicos</h3>
 							<ul className="space-y-2 text-stone-300">
-								<li><Link href="#" className="hover:text-white">Full-Service Liquidity</Link></li>
-								<li><Link href="#" className="hover:text-white">Wealth Management</Link></li>
-								<li><Link href="#" className="hover:text-white">Employee Benefits</Link></li>
-								<li><Link href="#" className="hover:text-white">Equity Education</Link></li>
+								<li><Link href="#" className="hover:text-white">Gestão Administrativa</Link></li>
+								<li><Link href="#" className="hover:text-white">Relatórios Financeiros</Link></li>
+								<li><Link href="#" className="hover:text-white">Assessoria Jurídica</Link></li>
+								<li><Link href="#" className="hover:text-white">Treinamentos</Link></li>
 							</ul>
 						</div>
 						<div>
-							<h3 className="text-lg font-semibold mb-4">Tools</h3>
+							<h3 className="text-lg font-semibold mb-4">Serviços</h3>
 							<ul className="space-y-2 text-stone-300">
-								<li><Link href="#" className="hover:text-white">AMT Calculator</Link></li>
-								<li><Link href="#" className="hover:text-white">Equity Planner</Link></li>
-								<li><Link href="#" className="hover:text-white">Tax Calculator</Link></li>
-								<li><Link href="#" className="hover:text-white">Exit Calculator</Link></li>
+								<li><Link href="#" className="hover:text-white">Administração Predial</Link></li>
+								<li><Link href="#" className="hover:text-white">Consultoria Especializada</Link></li>
+								<li><Link href="#" className="hover:text-white">Gestão de Facilities</Link></li>
+								<li><Link href="#" className="hover:text-white">Auditoria Condominial</Link></li>
 							</ul>
 						</div>
 						<div>
-							<h3 className="text-lg font-semibold mb-4">Resources</h3>
+							<h3 className="text-lg font-semibold mb-4">Recursos</h3>
 							<ul className="space-y-2 text-stone-300">
-								<li><Link href="#" className="hover:text-white">Secfi Learn</Link></li>
-								<li><Link href="#" className="hover:text-white">Case Studies</Link></li>
+								<li><Link href="#" className="hover:text-white">Central de Ajuda</Link></li>
+								<li><Link href="#" className="hover:text-white">Cases de Sucesso</Link></li>
 								<li><Link href="#" className="hover:text-white">Newsletter</Link></li>
-								<li><Link href="#" className="hover:text-white">About Secfi</Link></li>
+								<li><Link href="#" className="hover:text-white">Sobre a Giordano</Link></li>
 							</ul>
 						</div>
 					</div>
 					<div className="border-t border-slate-700 mt-8 pt-8 text-center text-stone-400">
-						<p>&copy; 2024 Secfi. All rights reserved.</p>
+						<p>&copy; 2024 Giordano Administração. Todos os direitos reservados.</p>
 					</div>
 				</div>
 			</footer>
