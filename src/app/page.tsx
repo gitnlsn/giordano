@@ -1,7 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import React from 'react';
+import {
+	Dialog,
+	DialogContent,
+	DialogTrigger,
+} from "~/components/ui/dialog";
+import GoogleFormEmbed from '~/components/GoogleFormEmbed';
 
 export default function Home() {
+	const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScMNIoFabQgdCVQCK2igKPZCDLj4HadCboLQldHSa8U4asSWQ/viewform?embedded=true";
+
 	return (
 		<div className="min-h-screen bg-stone-50">
 			{/* Header */}
@@ -42,16 +51,27 @@ export default function Home() {
 							<Link href="#" className="text-slate-600 hover:text-slate-800 text-sm font-medium">
 								Log in
 							</Link>
-							<Link 
-								href="#" 
-								className="bg-slate-700 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-800"
-							>
-								Get started
-							</Link>
+						
 						</div>
 					</div>
 				</div>
 			</header>
+
+			{/* Floating Modal Button */}
+			<Dialog>
+				<DialogTrigger asChild>
+					<div className="fixed bottom-8 right-8 z-20">
+						<button
+							className="bg-slate-700 hover:bg-slate-800 text-white font-bold py-3 px-5 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-slate-700 focus:ring-opacity-50"
+						>
+							Solicite seu Orçamento
+						</button>
+					</div>
+				</DialogTrigger>
+				<DialogContent className="p-0 sm:max-w-[800px]" removeCloseButton>
+					<GoogleFormEmbed formSrc={googleFormUrl} />
+				</DialogContent>
+			</Dialog>
 
 			{/* Hero Section */}
 			<section className="bg-stone-50 py-20">
@@ -63,12 +83,6 @@ export default function Home() {
 					<p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
 						Secfi delivers liquidity and wealth management services to help employees and shareholders of innovative companies achieve their financial goals.
 					</p>
-					<Link 
-						href="#" 
-						className="bg-slate-700 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-slate-800 inline-block"
-					>
-						Get started
-					</Link>
 				</div>
 			</section>
 
@@ -208,44 +222,45 @@ export default function Home() {
 				</div>
 			</section>
 
+
 			{/* Newsletter Section */}
 			<section className="bg-gradient-to-r from-slate-700 to-slate-800 py-20">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="grid md:grid-cols-2 gap-12 items-center">
 						<div>
 							<h2 className="text-4xl font-bold text-white mb-4">
-								We love this stuff <span className="italic">so much</span> we write about it every month
+								Transforme a gestão do seu <span className="italic">condomínio</span> hoje mesmo
 							</h2>
 							<div className="space-y-4">
 								<div>
-									<h3 className="text-xl font-semibold text-white mb-2">Secfi Learn</h3>
-									<p className="text-stone-200 mb-4">Our collection of educational content</p>
+									<h3 className="text-xl font-semibold text-white mb-2">Giordano Administração</h3>
+									<p className="text-stone-200 mb-4">Soluções completas em gestão condominial</p>
 									<ul className="space-y-2 text-stone-200 text-sm">
-										<li>• What is the alternative minimum tax (AMT)?</li>
-										<li>• What is the 83(b) election – and when should you file it?</li>
-										<li>• Should You Exercise Your Vested Stock Options After Leaving Your Company?</li>
-										<li>• When should you hire a financial advisor?</li>
+										<li>• Administração profissional e transparente</li>
+										<li>• Tecnologia de ponta para gestão eficiente</li>
+										<li>• Assessoria jurídica especializada</li>
+										<li>• Atendimento personalizado aos condôminos</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						
 						<div className="bg-white p-8 rounded-2xl">
-							<h3 className="text-2xl font-bold text-slate-800 mb-2">Founders & Funders</h3>
-							<p className="text-slate-600 mb-6">Subscribe to our newsletter</p>
+							<h3 className="text-2xl font-bold text-slate-800 mb-2">Solicite seu Orçamento</h3>
+							<p className="text-slate-600 mb-6">Entre em contato para uma proposta personalizada</p>
 							<p className="text-slate-700 mb-6">
-								Join 30k+ people getting insights on what's happening in startups, venture capital, public markets, and more.
+								Descubra como nossa experiência e tecnologia podem otimizar a administração do seu condomínio com total transparência e eficiência.
 							</p>
-							<div className="flex flex-col sm:flex-row gap-4">
-								<input 
-									type="email" 
-									placeholder="Enter your email" 
-									className="flex-1 px-4 py-3 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
-								/>
-								<button className="bg-slate-700 text-white px-6 py-3 rounded-md font-medium hover:bg-slate-800">
-									Subscribe
-								</button>
-							</div>
+							<Dialog>
+								<DialogTrigger asChild>
+									<button className="bg-slate-700 text-white px-6 py-3 rounded-md font-medium hover:bg-slate-800 w-full">
+										Solicitar Orçamento Gratuito
+									</button>
+								</DialogTrigger>
+								<DialogContent className="p-0 sm:max-w-[800px]" removeCloseButton>
+									<GoogleFormEmbed formSrc={googleFormUrl} />
+								</DialogContent>
+							</Dialog>
 						</div>
 					</div>
 				</div>
